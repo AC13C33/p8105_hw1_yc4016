@@ -5,4 +5,15 @@ date: "2022-09-23"
 author: "Yishan Chen"
 ---
 
+```{r setup, include = FALSE}
+library(tidyverse)
+```
+
+# Problem 1
+
+Load `penguins` dataset.
+
+```{r}
+data("penguins", package = "palmerpenguins")
+```
 
