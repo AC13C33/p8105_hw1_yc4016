@@ -13,7 +13,15 @@ library(tidyverse)
 
 Load `penguins` dataset.
 
-```{r}
+```{r setup_dataset}
 data("penguins", package = "palmerpenguins")
 ```
 
+* The name of variables are `r names(penguins)`. 
+  * Some important value: 
+    * The mean of flipper length is `r round(mean(pull(penguins, flipper_length_mm), na.rm = TRUE), digit = 2)` mm.
+    * The median of flipper length is `r round(median(pull(penguins, flipper_length_mm), na.rm = TRUE), digit = 2)` mm.
+    * The mean of bill length is `r round(mean(pull(penguins, bill_length_mm), na.rm = TRUE), digit = 2)` mm.
+    * The median of bill lengthis `r round(median(pull(penguins, bill_length_mm), na.rm = TRUE), digit = 2)` mm.
+* The size of the dataset are `r nrow(penguins)` rows and `r ncol(penguins)` columns.
+* The mean of flipper length is `r round(mean(pull(penguins, flipper_length_mm), na.rm = TRUE), digit = 2)` mm.
