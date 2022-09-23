@@ -25,3 +25,10 @@ data("penguins", package = "palmerpenguins")
     * The median of bill lengthis `r round(median(pull(penguins, bill_length_mm), na.rm = TRUE), digit = 2)` mm.
 * The size of the dataset are `r nrow(penguins)` rows and `r ncol(penguins)` columns.
 * The mean of flipper length is `r round(mean(pull(penguins, flipper_length_mm), na.rm = TRUE), digit = 2)` mm.
+
+
+```{r scatter_plot, warning = FALSE}
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
+ggsave("scatter_plot.pdf", height = 5, width = 5)
+```
+
