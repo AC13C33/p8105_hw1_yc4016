@@ -63,4 +63,14 @@ mean(pull(hw1p2_df, vec_factor))
 * We cannot take the mean of a character variable and factor variable, which has results NA. 
 
 
+```{r convertion, include = FALSE}
+as.numeric(pull(hw1p2_df, vec_logical))
+as.numeric(pull(hw1p2_df, vec_char))
+as.numeric(pull(hw1p2_df, vec_factor))
+```
+
+* After converting logical, character, and factor variables into numeric variable, we can take the mean of logical and factor variables. However, we still cannot take the mean of a character variable. 
+
+* The logical variables are stored as a distinct data type that TRUE is stored as 1 and FALSE is stored as 0. Factor variables are stored as integers. So after converting to the numeric, we can take the mean of logical and factor variables. However, character variable are stored as character, so we could not take the mean of it. Yes this helps explain what happened when you try to take the mean. 
+
 
