@@ -59,5 +59,8 @@ mean(pull(hw1p2_df, vec_char))
 mean(pull(hw1p2_df, vec_factor))
 ```
 
+* We can take the mean of numeric variable and logical variable.
+* We cannot take the mean of a character variable and factor variable, which has results NA. 
+
 
 
