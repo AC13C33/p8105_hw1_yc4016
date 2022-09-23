@@ -49,3 +49,15 @@ hw1p2_df = tibble(
 hw1p2_df
 ```
 
+
+##### Take the mean of each variable.
+
+```{r mean_of_variables}
+mean(pull(hw1p2_df, vec_norm))
+mean(pull(hw1p2_df, vec_logical))
+mean(pull(hw1p2_df, vec_char))
+mean(pull(hw1p2_df, vec_factor))
+```
+
+
+
